@@ -24,8 +24,14 @@ body {
 }
 
 h1,
-p {
+p,
+ul {
   margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 /* Container */
@@ -60,17 +66,16 @@ p {
 /* Person image */
 
 .person {
-  width: fit-content;
-  height: fit-content;
-  background: white;
-  border-radius: 50%;
   justify-self: center;
   transform: translateY(calc(-53em / 18));
-}
-
-.person img:last-of-type {
-  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 5px solid white;
   border-radius: 50%;
+  overflow: hidden;
+  width: 96px;
+  height: 96px;
 }
 
 /* Info */
